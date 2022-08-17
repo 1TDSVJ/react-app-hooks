@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function ShowRepos(props) {
-  let estilo;
-  if (new Date().getHours() < 12) {
-    estilo = props.objStyles.manha;
-  } else if (new Date().getHours() > 12 && new Date().getHours() < 18) {
-    estilo = props.objStyles.tarde;
-  } else {
-    estilo = props.objStyles.noite;
-  }
+  useEffect(async () => {
+    const response = await fetch('https://api.github.com/users');
+    const data = await response.json();
+    props.setRepositorios(data);
+  }, []);
+
+  useEffect(() => {
+    console.log('Renderizou o repositorio!');
+  }, [props.repositorios]);
+
   return (
     <>
-      <h3 style={estilo}>Lista de Repositórios</h3>
+      <h3>Lista de Repositórios</h3>
       <p>{props.repositorios}</p>
       <button onClick={() => props.setRepositorios('Alterado no filho!')}>
         Alterar
