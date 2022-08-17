@@ -1,5 +1,5 @@
 import React from "react"
-import Repositorios from "./repositorios/Repositorios"
+import Repositorios from "./components/repositorios/Repositorios"
 
 export default function App(){
     return(
