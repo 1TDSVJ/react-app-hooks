@@ -1,6 +1,13 @@
 import React, {useState} from "react"
+import ShowRepos from "../ShowRepos/ShowRepos"
 
 export default function Repositorios(){
+
+    const objEstilos = {
+        noite: {backgroundColor:'#FF0000'},
+        tarde: {backgroundColor:'#FFF000'},
+        manha: {backgroundColor:'#0000FF'},
+    }
 
     const [repositorios, setRepositorios] = useState("1TDSVJ")
     let valorVariavel = "2022"
@@ -14,10 +21,19 @@ export default function Repositorios(){
     return(
 
         <div>
-            <h2>Exemplo de utilização do useState</h2>
-            <p>Meu repositorio : {repositorios}</p>
-            <p>Minha Variavel : {valorVariavel}</p>
-            <button onClick={()=>alteraRepo("1TDSVJ")}>Altera Dados</button>
+            <h2 style={{backgroundColor:'#00FF00',color:'#FF0000', textAlign:'center'}}>Exemplo de utilização do useState</h2>
+            <p style={objEstilos.noite}>Meu repositorio : {repositorios}</p>
+            <p style={objEstilos.manha}>Minha Variavel : {valorVariavel}</p>
+
+            <button onClick={()=>alteraRepo()}>Altera Dados</button>
+
+            <ShowRepos 
+                repositorios={repositorios} 
+                setRepositorios={setRepositorios}
+                objEstilos={objEstilos}
+                />
+            
+            
         </div>
     )
 
