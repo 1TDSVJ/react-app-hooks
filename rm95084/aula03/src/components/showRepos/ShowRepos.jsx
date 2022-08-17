@@ -1,23 +1,21 @@
 import React from "react";
+import { useEffect } from "react";
 
 const ShowRepos = (props) => {
-  let estilo;
+  useEffect(async() => {
+      const response = await fetch("https://api.github.com/users");
+      const data = await response.json();
+      props.setRepositorios(data)
+  }, []);
 
-  if (new Date().getHours() < 12) {
-    estilo = props.objEstilos.manha;
-  } else if (new Date().getHours() > 12 && new Date().getHours() < 18) {
-    estilo = props.objEstilos.tarde;
-  } else {
-    estilo = props.objEstilos.noite;
-  }
 
   return (
     <div>
-      <h2 style={estilo}>Show Repos</h2>
+      <h2>Show Repos</h2>
       <p>{props.repositorios}</p>
       <button
         onClick={() => {
-          props.addRepo();
+          props.setRepositorios("Lucas");
         }}
       >
         alterar
