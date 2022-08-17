@@ -32,7 +32,6 @@ export default function Repositorios() {
                 setRepositorios = {setRepositorios}
                 objEstilos={objEstilos}
                 />
-            <button onClick={() => alteraRepo()}>Altera Dados</button>
         </div>
     )
 }
