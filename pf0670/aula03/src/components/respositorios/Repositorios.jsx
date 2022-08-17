@@ -10,7 +10,8 @@ export default function Repositorios(){
     }
 
 
-    const [repositorios, setRepositorios] = useState("1TDSVJ")
+
+    const [repositorios, setRepositorios] = useState([])
     let valorVariavel = "2022"
 
     const alteraRepo = () =>{
