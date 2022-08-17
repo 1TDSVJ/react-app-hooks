@@ -1,6 +1,7 @@
 //rfc -> cria estrutura básica
 
 import React from "react"
+import Repositorios from "./components/repositorios/Repositorios"
 
 //export default function App(){
 //    return()
@@ -9,9 +10,8 @@ import React from "react"
 export default function App(){
     return(
         <div>
-            <h1>ESTUDO SOBRE HOOKS</h1>
-
-            
+            <h1>ESTUDO SOBRE HOOK</h1>
+            <Repositorios/>
         </div>
     )
 }
