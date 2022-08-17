@@ -1,14 +1,38 @@
 import React, {useState} from "react"
+import ShowsRepos from "../showRepos/ShowRepos"
 
 export default function Repositorios(){
 
-    const [repositorios, setRepositorios] = useState()
+    const objEstilos = {
+        noite:{backgroundColor:'#FF0000'},
+        tarde:{backgroundColor:'#FFF000'},
+        manha:{backgroundColor:'#0000FF'}
+    }
+
+    const [repositorios, setRepositorios] = useState("1TDSVJ")
+    let valorVariavel = "2022"
+
+    const alteraRepo = () =>{
+        setRepositorios(repositorios + 1)
+        valorVariavel += 5
+        console.log(valorVariavel)
+    }
 
     return(
         <div>
-            <h2>Exemplo de utilização de useState</h2>
-            <p>Meu repositório : {repositorios}</p>
-            <button onClick={()=> setRepositorios("1TDSVJ")}>Add-Repo</button>
+            <h2 style={{backgroundColor:'#00FF00',color:'#FF0000',textAlign:'center'}}>Exemplo de utilização de useState</h2>
+            <p style={objEstilos.noite}>Meu repositório : {repositorios}</p>
+            <p style={objEstilos.manha}>Minha Variável : {valorVariavel}</p>
+
+            <button onClick={()=> alteraRepo()}>Altera Dados</button>
+
+            <ShowsRepos
+                repositorios={repositorios}
+                setRepositorios={setRepositorios}
+                objEstilos={objEstilos}
+                />
+            
+
         </div>
 
 
