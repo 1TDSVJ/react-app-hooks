@@ -2,12 +2,13 @@ import React from "react";
 import { useEffect } from "react";
 
 const ShowRepos = (props) => {
-  useEffect(async() => {
+  useEffect(() => {
+    const fecth = async () => {
       const response = await fetch("https://api.github.com/users");
       const data = await response.json();
-      props.setRepositorios(data)
+    };
+    fecth();
   }, []);
-
 
   return (
     <div>
