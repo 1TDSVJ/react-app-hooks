@@ -1,24 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 
 export default function ShowRepos(props){
-    
-    let estilo 
 
-        if(new Date().getHours() < 12){
-            estilo = props.objEstilos.manha
-        }else if(new Date().getHours() > 12 && new Date().getHours() < 18){
-            estilo = props.objEstilos.tarde
-        } else{
-            estilo = props.objEstilos.noite
-        }
+    // a função é assíncrona para que ela continue carregando enquanto o resto da página carrega
+    useEffect(async () => {
+        const response = await fetch("https://api.github.com/users")
+        const data = await response.json() // a resposta vem como string, portanto .json() remonta os dados
+        props.setRepositorios(data)
+    },[])
+    
+    // useEffeect executa o que estiver dentro dele quando o componente for renderizado
+    // useEffect(()=>{
+    //     console.log("RENDERIZOU O COMPONENTE!")
+    // },[])
+
+    // como dependencias foram passadas, o useEffect só será executado quando o objeto for renderizado
+    useEffect(()=>{
+        console.log("RENDERIZOU O REPOSITORIO!")
+    },[props.repositorios])
     
     return(
         <div>
 
-            <h2 style={estilo}>Lista de Repositórios</h2>
+            <h2>Lista de Repositórios</h2>
             <p>{props.repositorios}</p>
             <button onClick={()=> props.setRepositorios("ALTERADO DO FILHO")}>ALTERAR</button>
-
 
 
         </div>
