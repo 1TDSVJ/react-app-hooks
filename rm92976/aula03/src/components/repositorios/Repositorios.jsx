@@ -10,7 +10,7 @@ export default function Repositorios(){
         manha:{backgroundColor: '#0000ff'}
     }
     
-    const [repositorios, setRepositorios] = useState("1TDSVJ")
+    const [repositorios, setRepositorios] = useState("[]")
     let valorVariavel = "2022"
 
     const alteraRepo = () => {
