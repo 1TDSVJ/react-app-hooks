@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-export default function GithubUsers(props) {
+export default function GithubUsers() {
   const [newUsers, setnewUsers] = useState([])
 
   useEffect(() => {
