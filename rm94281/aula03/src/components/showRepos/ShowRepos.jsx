@@ -1,23 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function ShowRepos(props) {
-  useEffect(async () => {
-    const response = await fetch('https://api.github.com/users');
-    const data = await response.json();
-    props.setRepositorios(data);
-  }, []);
+  const [newRepos, setNewRepos] = useState([]);
 
   useEffect(() => {
-    console.log('Renderizou o repositorio!');
-  }, [props.repositorios]);
+    carregaRepos();
+  }, []);
+
+  const carregaRepos = async () => {
+    const resp = await fetch(
+      'https://api.github.com/users/RafaRamosCosta/repos'
+    );
+    // parsemaneto dos dados
+    const data = await resp.json();
+    setNewRepos(data);
+  };
 
   return (
     <>
-      <h3>Lista de Repositórios</h3>
-      <p>{props.repositorios}</p>
-      <button onClick={() => props.setRepositorios('Alterado no filho!')}>
-        Alterar
-      </button>
+      <h2>Lista de Repositórios</h2>
+      <ul>
+        {newRepos.map((repositorio) => 
+          // é necessário passar uma unique key para cada elemento que será criado
+          <li key={repositorio.id}>{repositorio.name}</li>
+        )}
+      </ul>
     </>
   );
 }
