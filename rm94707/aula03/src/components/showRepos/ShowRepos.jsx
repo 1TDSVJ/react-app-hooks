@@ -1,24 +1,30 @@
-import React, { useEffect } from "react"
+import React, {useEffect,useState} from 'react'
 
-export default function ShowsRepos(props){
 
-    useEffect(async ()=>{
-        
-        const response = await fetch("https://api.github.com/users")
-        const data = await response.json()
-        props.setRepositorios(data)
-    },[])
-    useEffect(()=>{
-        console.log('RENDERIZOU O REPOSITÓRIO!')
-    },[props.repositorios])
+export default function ShowRepos(props){
+
+    const [newRepos, setnewRepos] = useState([])
+
+    useEffect( () => {
+        carregaRepos()
+    }, [])
+
+// ASYNCHRONOUS
+    const carregaRepos = async()=>{
+        const resp = await fetch("https://api.github.com/users/alecarlosjesus/repos")
+        // PARSEAMENTO DOS DADOS
+        const data = await resp.json()
+        setnewRepos(data)
+    }
 
     return(
         <div>
             <h2>Lista de Repositórios</h2>
-            <p>{props.repositorios}</p>
-            <button onClick={()=> props.setRepositorios("ALTERADO NO FILHO!")}>Alterar</button>
-
-
+            <ul>
+                {newRepos.map((repositorio) =>
+                    <li key={repositorio.id}>{repositorio.description}</li>
+                )}
+            </ul>
         </div>
     )
 }
