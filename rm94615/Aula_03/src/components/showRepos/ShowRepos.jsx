@@ -3,38 +3,32 @@ import { useEffect } from "react"
 
 export default function ShowRepos(props){
 
-    // let estilo
+    const [newRepos, setNewRepos] = React.useState([])
 
-    // if(new Date().getHours() < 12){
-    //     estilo = props.objEstilos.manha
-        
-    // } else if(new Date().getHours() > 12 && new Date().getHours() < 18){
-    //     estilo = props.objEstilos.tarde
-    // } else{
-    //     estilo = props.objEstilos.noite
-    // }
-
-    useEffect(async ()=>{
-        
-        const response = await fetch("https://api.github.com/users/")
-        const data = await response.json()
-        props.setRepositorios(data)
-
+    useEffect( ()=>{
+        carregaRepos()
     },[])
 
     useEffect(()=>{
         console.log("Renderizou o repositório")
     },[props.repositorios])
 
+    const carregaRepos = async () => {
+        const response = await fetch("https://api.github.com/users/diego3g/repos")
+        const data = await response.json()
+        setNewRepos(data)
+    }
+
     return(
         <div>
             <h2>Lista de repositórios</h2>
             <p>{props.repositorios}</p>
 
-            <button onClick={()=> props.setRepositorios("Alterado no filho!")}>Alterar</button>
-            
-            
-
+            <ul>
+                {newRepos.map(repositorio =>
+                    <li key={repositorio.id}>{repositorio.name}</li>
+                )}
+            </ul>
         </div>
     )
 }
