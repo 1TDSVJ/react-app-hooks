@@ -1,5 +1,6 @@
 import React from "react";
 import {useEffect} from "react";
+import {useState} from "react";
 
 export default function ShowRepos(props) {
 
@@ -7,11 +8,13 @@ export default function ShowRepos(props) {
 
     useEffect( () => {
         carregaRepos()
-    })
+    }, [])
 
-    const carregaRepos = async()=>{
+    //ASYNCHRONOUS
+    const carregaRepos = async() => {
         const resp = await fetch("https://api.github.com/users/alecarlosjesus/repos")
         const data = await resp.json()
+        
         setnewRepos(data)
     }
 
@@ -19,10 +22,10 @@ export default function ShowRepos(props) {
         <div>
             <h2>Lista de Repositórios</h2>
             <ul>
-                {newRepos.map((repositorio, i) =>
-                    <li key={i}>{repositorio.name}</li>
+                {newRepos.map((repositorio, i) => 
+                    < li key={repositorio.id}>{repositorio.description}</li>
                 )}
-            </ul>
+            </ul> 
         </div>
     )
 }
