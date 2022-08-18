@@ -1,29 +1,28 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-const ShowRepos = (props) => {
+export default function ShowRepos(props) {
+  const [newRepos, setnewRepos] = useState([]);
+
   useEffect(() => {
-    const fecth = async () => {
-      const response = await fetch("https://api.github.com/users");
-      const data = await response.json();
-      return data
-    };
-    fecth();
-  }, []);
+    carregaRepos();
+  });
+
+  const carregaRepos = async () => {
+    const resp = await fetch(
+      "https://api.github.com/users/alecarlosjesus/repos"
+    );
+    const data = await resp.json();
+    setnewRepos(data);
+  };
 
   return (
     <div>
-      <h2>Show Repos</h2>
-      <p>{props.repositorios}</p>
-      <button
-        onClick={() => {
-          props.setRepositorios("Lucas");
-        }}
-      >
-        alterar
-      </button>
+      <h2>Lista de Repositórios</h2>
+      <ul>
+        {newRepos.map((repositorio, i) => (
+          <li key={i}>{repositorio.name}</li>
+        ))}
+      </ul>
     </div>
   );
-};
-
-export default ShowRepos;
+}
