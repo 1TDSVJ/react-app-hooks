@@ -11,21 +11,26 @@ export default function ShowRepos(props) {
 
     //ASYNCHRONOUS
     const carregaRepos = async () => {
-        const resp = await fetch("https://api.github.com/users/alecarlosjesus/repos")
+        const resp = await fetch("https://api.github.com/users")
         //PARSEAMENTO DOS DADOS
         const data = await resp.json()
 
         setnewRepos(data)
     }
 
-
-
     return (
         <div>
             <h2>Lista de Repositórios</h2>
             <ul>
                 {newRepos.map((repositorio) =>
-                    <li key={repositorio.id}>{repositorio.description}</li>
+                    <li key={repositorio.id}>
+                        <figure>
+                            <img src={repositorio.avatar_url} alt="" style={{ width: "200px" }} />
+                            <figcaption><a href={repositorio.html_url}>{repositorio.login}</a></figcaption>
+                        </figure>
+
+
+                    </li>
                 )}
             </ul>
         </div>
