@@ -13,7 +13,6 @@ import Footer from "./componentsDesafio/footer/Footer"
 export default function AppDesafio(){
     return(
         <>
-        
             <MenuDesafio/>
             <Routes>
                 <Route path="/" element={<HomeDesafio/>}/>
