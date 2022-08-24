@@ -1,15 +1,13 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import MenuLoja from './ex-loja-moda/menu-loja/MenuLoja';
-import HomeLoja from './ex-loja-moda/home-loja/HomeLoja';
-
+import Rotas from './ex-loja-moda/rotas/Rotas';
+import Rodape from './ex-loja-moda/rodape/Rodape';
 export default function App() {
   return (
-    <>
+    <div style={{display:'flex', flexDirection: 'column', justifyContent: 'center'}}>
       <MenuLoja />
-      <Routes>
-        <Route path={<HomeLoja />} />
-      </Routes>
-    </>
+      <Rotas />
+      <Rodape />
+    </div>
   );
 }
