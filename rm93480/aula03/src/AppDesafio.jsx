@@ -9,10 +9,6 @@ import ModaMasculina from "./components/modaMasculina/ModaMasculina"
 import ModaInfantil from "./components/modaInfantil/ModaInfantil"
 import Sobre from "./components/sobre/Sobre"
 
-//export default function App(){
-//    return()
-//}
-
 export default function App(){
     return(
         <>
