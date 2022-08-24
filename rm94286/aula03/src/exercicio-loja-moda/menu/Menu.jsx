@@ -2,21 +2,38 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Menu() {
+  const header = {
+    backgroundColor: '#f2f3',
+    color: '#fff',
+    padding: '1rem'
+  }
+  const ul = {
+    display: 'flex',
+    listStyle: 'none',
+    justifyContent: 'space-around',
+  }
+  const link = {
+    textDecoration: 'none',
+    color: '#fff',
+    fontSize: '1.5rem',
+    fontWeight: 'bold',
+    fontFamily: 'Monospace',
+  }
   return (
-    <header>
+    <header style={header}>
       <nav>
-        <ul>
+        <ul style={ul}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" style={link}>Home</Link>
           </li>
           <li>
-            <Link to="/feminino">Feminino</Link>
+            <Link to="/feminino" style={link}>Feminino</Link>
           </li>
           <li>
-            <Link to="/masculino">Masculino</Link>
+            <Link to="/masculino" style={link}>Masculino</Link>
           </li>
           <li>
-            <Link to="/sobre">Sobre</Link>
+            <Link to="/sobre" style={link}>Sobre</Link>
           </li>
         </ul>
       </nav>
