@@ -7,12 +7,10 @@ export default function ShowRepos(props){
 
     useEffect( () => {
         carregaRepos()
-    }, [])
+    })
 
-// ASYNCHRONOUS
     const carregaRepos = async()=>{
         const resp = await fetch("https://api.github.com/users/alecarlosjesus/repos")
-        // PARSEAMENTO DOS DADOS
         const data = await resp.json()
         setnewRepos(data)
     }
@@ -21,8 +19,8 @@ export default function ShowRepos(props){
         <div>
             <h2>Lista de Repositórios</h2>
             <ul>
-                {newRepos.map((repositorio) =>
-                    <li key={repositorio.id}>{repositorio.description}</li>
+                {newRepos.map((repositorio, i) =>
+                    <li key={i}>{repositorio.name}</li>
                 )}
             </ul>
         </div>
