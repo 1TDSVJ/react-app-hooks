@@ -10,7 +10,7 @@ export default function ShowRepos(props){
     })
 
     const carregaRepos = async()=>{
-        const resp = await fetch("https://api.github.com/users/alecarlosjesus/repos")
+        const resp = await fetch("https://api.github.com/users/ViniOlr/repos")
         const data = await resp.json()
         setnewRepos(data)
     }
