@@ -5,7 +5,10 @@ export default function Rodape(){
 
     return(
         <footer>
-            <p>Entre em contato: </p>
+            <p>Entre em contato: 
+                <br />
+                Integrante: Heitor Borba - RM92976
+            </p>
         </footer>
     )
 }

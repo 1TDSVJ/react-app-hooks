@@ -1,5 +1,5 @@
 import React from 'react';
-import roupaMasculina from './img/roupaMasculina';
+import roupaM from '../img/roupaM.jpg'
 
 export default function ModaMasculina(){
 
@@ -16,8 +16,9 @@ export default function ModaMasculina(){
            <div style={modaMasculina}>
            <h1> Moda Masculina</h1>
             <span>
-                <img src={roupaMasculina} alt="Roupa Masculina" />
+                <img src={roupaM} alt="Roupa Masculina" />
                 <br />
+                
                 <figcaption> Roupa Masculina</figcaption>
             </span>
            </div>

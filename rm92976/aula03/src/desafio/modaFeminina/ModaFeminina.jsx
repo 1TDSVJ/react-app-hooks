@@ -1,4 +1,5 @@
 import react from 'react';
+import roupaF2 from '../img/roupaF2.jpg'
 
 export default function ModaFeminina(){
 
@@ -15,8 +16,8 @@ export default function ModaFeminina(){
             <div style={modaFeminina}>
             <h1>Moda Feminina</h1>
                 <span>
-                    <img src="" alt="" />
-                    <figcaption>Camiseta Feminina</figcaption>
+                    <img src={roupaF2} alt="Roupa Feminina" />
+                    <figcaption>Roupa Feminina</figcaption>
                 </span>
             </div>
         </header>
