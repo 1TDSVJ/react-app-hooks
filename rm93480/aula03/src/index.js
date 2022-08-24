@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import App from './App'
+import AppDesafio from './AppDesafio'
 //import "./index.css" <- JAMAIS FAZER ESTA MERDA!
 
 ReactDOM.render(
     <BrowserRouter>
-        <App/>
+        <AppDesafio/>
     </BrowserRouter>
 , document.getElementById("root"))

@@ -2,20 +2,20 @@
 
 import React from "react"
 import {Routes,Route} from "react-router-dom"
-import Home from "./components/home/Home"
-import Menu from "./components/menu/Menu"
-import ModaFeminina from "./components/modaFeminina/ModaFeminina"
-import ModaMasculina from "./components/modaMasculina/ModaMasculina"
-import ModaInfantil from "./components/modaInfantil/ModaInfantil"
-import Sobre from "./components/sobre/Sobre"
+import HomeDesafio from "./componentsDesafio/homeDesafio/HomeDesafio"
+import MenuDesafio from "./componentsDesafio/menuDesafio/MenuDesafio"
+import ModaFeminina from "./componentsDesafio/modaFeminina/ModaFeminina"
+import ModaMasculina from "./componentsDesafio/modaMasculina/ModaMasculina"
+import ModaInfantil from "./componentsDesafio/modaInfantil/ModaInfantil"
+import Sobre from "./componentsDesafio/sobre/Sobre"
 
-export default function App(){
+export default function AppDesafio(){
     return(
         <>
         
-            <Menu/>
+            <MenuDesafio/>
             <Routes>
-                <Route path="/" element={<Home/>}/>
+                <Route path="/" element={<HomeDesafio/>}/>
                 <Route path="/modaFeminina" element={<ModaFeminina/>}/>
                 <Route path="/modaMasculina" element={<ModaMasculina/>}/>
                 <Route path="/modaInfantil" element={<ModaInfantil/>}/>

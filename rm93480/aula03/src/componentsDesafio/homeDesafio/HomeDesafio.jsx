@@ -2,7 +2,7 @@ import React from "react"
 
 export default function HomeDesafio(){
     const homeDesafio={
-        backgroundColor: "#f3f2ef",
+        backgroundColor: "#ebe7db",
         height:"85vh",
         textAlign:"center",
         color:"#242321",
