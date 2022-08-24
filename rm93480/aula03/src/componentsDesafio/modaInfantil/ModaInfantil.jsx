@@ -6,12 +6,16 @@ export default function ModaInfantil(){
         height:"85vh",
         textAlign:"center",
         color:"#0b7038",
+        fontSize:"25px"
     }
 
     return(
-        <div style={modaInfantil}>
-            <h1>Moda Infantil</h1>
-            <p>Exemplo de página de Produtos do projeto</p>
-        </div>
+        <body style={modaInfantil}>
+            <div>
+                <h1>Moda Infantil</h1>
+                <h3>TUDO QUE VOCÊ PRECISA PARA CONTER SEU JOVEM CAPETINHA</h3>
+            </div>
+        </body>
+        
     )
 }

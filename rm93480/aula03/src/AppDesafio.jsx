@@ -8,6 +8,7 @@ import ModaFeminina from "./componentsDesafio/modaFeminina/ModaFeminina"
 import ModaMasculina from "./componentsDesafio/modaMasculina/ModaMasculina"
 import ModaInfantil from "./componentsDesafio/modaInfantil/ModaInfantil"
 import Sobre from "./componentsDesafio/sobre/Sobre"
+import Footer from "./componentsDesafio/footer/Footer"
 
 export default function AppDesafio(){
     return(
@@ -21,7 +22,7 @@ export default function AppDesafio(){
                 <Route path="/modaInfantil" element={<ModaInfantil/>}/>
                 <Route path="/sobre" element={<Sobre/>}/>
             </Routes>
-    
+            <Footer/>
         </>
         
     )

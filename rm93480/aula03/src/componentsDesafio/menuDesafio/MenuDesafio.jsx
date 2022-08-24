@@ -2,10 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function MenuDesafio() {
+  const estiloNav={
+    listStyle:"none",
+    textDecoration: "none"
+  }
+
   return (
     <header>
         <nav>
-        <ul>
+        <ul style={estiloNav}>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/modaFeminina'>Moda Feminina</Link></li>
             <li><Link to='/modaMasculina'>Moda Masculina</Link></li>
@@ -14,5 +19,6 @@ export default function MenuDesafio() {
         </ul>
         </nav>
     </header>
+    
   )
 }

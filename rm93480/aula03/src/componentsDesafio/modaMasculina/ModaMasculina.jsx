@@ -6,12 +6,15 @@ export default function ModaMasculina(){
         height:"85vh",
         textAlign:"center",
         color:"#164070",
+        fontSize:"25px"
     }
 
     return(
-        <div style={modaMasculina}>
-            <h1>Moda Masculina</h1>
-            <p>Exemplo de página de Produtos do projeto</p>
-        </div>
+        <body style={modaMasculina}>
+            <div>
+                <h1>Moda Masculina</h1>
+                <h3>Tudo que você precisa para conter seu jovem capetinha</h3>
+            </div>
+        </body>
     )
 }
