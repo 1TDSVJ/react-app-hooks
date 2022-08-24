@@ -1,18 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/home/Home';
-import Menu from './components/menu/Menu';
-import Produtos from './components/produtos/Produtos';
-import Servicos from './components/servicos/Servicos';
+import MenuLoja from './ex-loja-moda/menu-loja/MenuLoja';
+import HomeLoja from './ex-loja-moda/home-loja/HomeLoja';
 
 export default function App() {
   return (
     <>
-      <Menu />
+      <MenuLoja />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/produtos" element={<Produtos />} />
-        <Route path="/servicos" element={<Servicos />} />
+        <Route path={<HomeLoja />} />
       </Routes>
     </>
   );
