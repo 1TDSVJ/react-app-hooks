@@ -1,12 +1,26 @@
 import React from 'react'
-import Repositorios from './components/repositorios/Repositorio'
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom' 
+import Home from './components/home/Home'
+import Produtos from './components/produtos/Produtos'
+import Servicos from './components/servicos/Servicos'
 
 export  default function App() {
     return(
-        <div>
-            <h1>Estudo sobre Hooks</h1>
-            <Repositorios/>
-        </div>
+        <>
+        <BrowserRouter>
+
+        <ul>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/protudos'>Produtos</Link></li>
+            <li><Link to='/servicos'>Serviços</Link></li>
+        </ul>
+            <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/produtos' element={<Produtos/>}/> 
+                <Route path='/servicos' element={<Servicos/>}/> 
+            </Routes>
+        </BrowserRouter>
+        </>
     )
 }
 
