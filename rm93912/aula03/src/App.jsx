@@ -1,5 +1,9 @@
 import React from "react"
-import Repositorios from "./components/repositorios/Repositorios"
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from "./components/home/Home"
+import Produtos from "./components/produtos/Produtos"
+import Servicos from "./components/servicos/Servicos"
+import Menu from "./components/menu/Menu"
 
 // const App = () =>{
 //     return(
@@ -13,9 +17,13 @@ import Repositorios from "./components/repositorios/Repositorios"
 
 export default function App(){
     return(
-        <div>
-            <h1>ESTUDO SOBRE HOOKS</h1>
-            <Repositorios/>
-        </div>
+        <>
+        <Menu/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/produtos" element={<Produtos/>}/>
+                <Route path="/servicos" element={<Servicos/>}/>
+            </Routes>
+        </>
     )
 }
