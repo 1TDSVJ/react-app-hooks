@@ -1,9 +1,12 @@
 import React from "react";
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
-import Home from './components/home/Home'
-import Produtos from './components/produtos/Produtos'
-import Servicos from './components/servicos/Servicos'
-import Menu from './components/menu/Menu'
+import Homeloja from "./desafio/home/Home-loja";
+import Menuloja from "./desafio/menu-loja/Menuloja";
+import Rodape from './desafio/rodape/Rodape'
+import ModaMasculina from "./desafio/modaMasculina/ModaMasculina";
+import ModaFeminina from "./desafio/modaFeminina/ModaFeminina";
+import ModaInfantil from './desafio/modaInfantil/ModaInfantil';
+import Sobre from './desafio/sobre/Sobre';
 
 
 
@@ -11,16 +14,22 @@ export default function App() {
   return (
     <>
     
-    <Menu/>
+    <Menuloja/>
 
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/produtos' element={<Produtos/>}/>
-        <Route path='/servicos' element={<Servicos/>}/> 
+        <Route path='/' element={<Homeloja/>}/>
+        <Route path='/modaMasculina' element={<ModaMasculina/>}/>
+        <Route path='/modaFeminina' element={<ModaFeminina/>}/> 
+        <Route path="/modaInfantil" element={<ModaInfantil/>}/>
+        <Route path="/sobre" element={<Sobre/>}/>
+
 
         
       </Routes>
-    
-    </>
+
+      <Rodape/>
+      
+      </>
+      
   );
 }
