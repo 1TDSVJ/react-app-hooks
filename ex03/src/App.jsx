@@ -4,32 +4,32 @@ import Carterinha from './components/carterinha/Carterinha';
 import Semaforo from './components/semaforo/Semaforo';
 
 export default function App() {
-  const carros = ['Fusca', 'Brasilia', 'Opala', 'Chevette', 'Ferrari', 'Porsche', 'Jaguar', 'Supra', 'BMW', 'Gol'];
+  const carros = ['Fiat', 'Jaguar', 'Opala', 'Porsche', 'BMW', 'Chevette', 'Brasilia', 'Supra', 'Gol'];
   
   const alunos = [{
-    fotoAluno: 'https://avatars.githubusercontent.com/u/80916930?v=4',
-    nomeAluno: 'Rafael Ramos Costa',
-    rmAluno: '94281',
+    fotoAluno: 'https://avatars.githubusercontent.com/u/101107856?s=400&u=8b6fcbc4229621bf8b728f3e6fbb3ca9f0664209&v=4',
+    nomeAluno: 'Pedro Henrique Chueiri',
+    rmAluno: '93939',
     cursoAluno: 'ADS',
     turma: '1TSDVJ',
   }, 
   {
-    fotoAluno: 'https://avatars.githubusercontent.com/u/80916905?v=4',
-    nomeAluno: 'Leonardo Ramos Costa',
-    rmAluno: '94286',
+    fotoAluno: 'https://avatars.githubusercontent.com/u/100133833?v=4',
+    nomeAluno: 'Lucas Guerra',
+    rmAluno: '95084',
     cursoAluno: 'ADS',
     turma: '1TSDVJ',
   },
   {
-    fotoAluno: 'https://avatars.githubusercontent.com/u/97682988?v=4',
-    nomeAluno: 'Heitor Borba Marini',
-    rmAluno: '94379',
+    fotoAluno: 'https://avatars.githubusercontent.com/u/101107763?v=4',
+    nomeAluno: 'Luis Felipe Gomes',
+    rmAluno: '94051',
     cursoAluno: 'ADS',
     turma: '1TSDVJ',
   }]
   return (
     <>
-      <h1>RAFAEL RAMOS COSTA RM94281 1TDSVJ</h1>
+      <h1>Pedro Henrique Chueiri RM93939 1TDSVJ</h1>
       <Semaforo />
       <Carros listaCarros={carros} />
       <Carterinha fotoAluno={alunos[0].fotoAluno} nomeAluno={alunos[0].nomeAluno} rmAluno={alunos[0].rmAluno} cursoAluno={alunos[0].cursoAluno} turma={alunos[0].turma}/>
