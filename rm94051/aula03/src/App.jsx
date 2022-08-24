@@ -1,16 +1,14 @@
 import React from "react";
-import Repositorios from "./components/repositorios/Repositorios";
-import GithubUsers from "./components/githubUsers/GithubUsers";
+import Menu from "./components/menu/Menu"
+import Rota from "./components/rota/Rota";
+
 
 export default function App(){
     return (
-        <div>
-            <h1>ESTUDO SOBRE HOOKS</h1>
-            <GithubUsers/>
-
-
-
-        </div>
+        <>
+        <Menu/>
+        <Rota/>
+        </>
     )
 }
 
