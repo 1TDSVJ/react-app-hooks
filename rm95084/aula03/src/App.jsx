@@ -1,13 +1,13 @@
 import React from "react";
-import Repositorios from "./components/repositorios/Repositorios";
-
+import Menu from "./components/menu/Menu";
+import Rotas from "./components/rotas/Rotas";
 
 const App = () => {
   return (
-    <div>
-      <h1>Estudo sobre hooks</h1>
-      <Repositorios />
-    </div>
+    <>
+      <Menu />
+      <Rotas />
+    </>
   );
 };
 
