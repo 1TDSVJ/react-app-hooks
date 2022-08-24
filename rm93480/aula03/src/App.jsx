@@ -1,7 +1,11 @@
 //rfc -> cria estrutura básica
 
 import React from "react"
-import Repositorios from "./components/repositorios/Repositorios"
+import {Routes,Route} from "react-router-dom"
+import Home from "./components/home/Home"
+import Produtos from "./components/produos/produtos"
+import Servicos from "./components/sevicos/Sevicos"
+import Menu from "./components/menu/Menu"
 
 //export default function App(){
 //    return()
@@ -9,17 +13,17 @@ import Repositorios from "./components/repositorios/Repositorios"
 
 export default function App(){
     return(
-        <div>
-            <h1>ESTUDO SOBRE HOOK</h1>
-            <Repositorios/>
-        </div>
+        <>
+        
+            <Menu/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/produtos" element={<Produtos/>}/>
+                <Route path="/servicos" element={<Servicos/>}/>
+            </Routes>
+    
+        </>
+        
     )
 }
 
-//const App = () => {
-//    return(
-//        <>
-//        
-//        </>
-//   )
-//}
