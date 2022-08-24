@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Produtos from './components/produtos/Produtos';
 import Servicos from './components/servicos/Servicos';
-import Menu from './menu/Menu';
+import Menu from './components/menu/Menu';
 
 export default function App() {
   return (
