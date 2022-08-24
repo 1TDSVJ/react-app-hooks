@@ -1,31 +1,23 @@
 import React from "react"
-import { Routes, Route } from 'react-router-dom'
-import Alunos from "./components/alunos/Alunos"
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from "./components/home/Home"
-import MainRoutes from "./components/routes/MainRoutes"
-import ShowRepos from "./components/showRepos/ShowRepos"
+import Menu from "./components/menu/Menu"
+import Produtos from "./components/produtos/Produtos"
+import Servicos from "./components/servicos/Servicos"
+
 
 export default function App() {
 
     return (
-
-        <div>
-            <h1>ESTUDO SOBRE HOOKS</h1>
-
-            <MainRoutes />
-
-            {/* <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/aluno">Aluno</Link></li>
-                <li><Link to="/repos">Repositorios</Link></li>
-            </ul> */}
-
-            {/* <GithubUsers /> */}
-            {/* <Repositorios/>     */}
-            {/* <Sem /> */}
-
-        </div >
-
+        <>
+             <Menu/>
+            <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/produtos" element={<Produtos/>} />
+                <Route path="/servicos" element={<Servicos/>} />
+            </Routes>
+        
+        </>
     )
 }
 
