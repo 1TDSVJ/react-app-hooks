@@ -17,16 +17,8 @@ export default function App() {
                 <Route path="/servicos" element={<Servicos/>} />
             </Routes>
         
+
         </>
     )
 }
 
-// const App = () =>{
-//     return(
-//         <>
-
-//         </>
-//     )
-// }
-
-// export default App
