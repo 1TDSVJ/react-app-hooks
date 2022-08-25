@@ -1,10 +1,11 @@
 import React from "react";
+import roupaC from "../img/roupaC.jpg";
 
 export default function ModaInfantil() {
 
     const modaInfantil = {
         backgroundColor :"#ccf5ff",
-        height: "85vh",
+        height: "120vh",
         textAlign: "center",
         color: "#ff6666"
     }
@@ -13,6 +14,10 @@ export default function ModaInfantil() {
         <div style={modaInfantil}>
             <h1>Moda Infantil</h1>
             <p>Temos a maior variedades de roupas para o publico Infantil! A criançada se diverte se vestindo!</p>
+            <figure>
+                <img src={roupaC} alt="Roupa Casual tema Dinossauro"/>
+                <figcaption>Conjunto Casual tema Dinossauro! Compre já o seu!</figcaption>
+            </figure>
         </div>
     )
 }
