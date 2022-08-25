@@ -16,7 +16,7 @@ export default function ModaInfantil() {
             <p>Temos a maior variedades de roupas para o publico Infantil! A criançada se diverte se vestindo!</p>
             <figure>
                 <img src={roupaC} alt="Roupa Casual tema Dinossauro"/>
-                <figcaption>Conjunto Casual infantil masculibi! Compre já o seu!</figcaption>
+                <figcaption>Conjunto Casual infantil masculino! Compre já o seu!</figcaption>
             </figure>
         </div>
     )
