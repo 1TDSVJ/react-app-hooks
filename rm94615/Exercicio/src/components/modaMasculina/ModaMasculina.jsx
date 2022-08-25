@@ -13,7 +13,7 @@ export default function ModaMasculina() {
     return(
         <div style={modaMasculina}>
             <h1>Moda Masculina</h1>
-            <p>Em Nossa Loja temos a maior variedade de roupas! Venha encontrar a roupa perfeita para você!</p>
+            <p>Em Nossa Loja temos a maior variedade de roupas.</p>
             <figure>
                 <img src={roupaM} alt="Uniforme Preto Pain Gaming (Kami)" />
                 <figcaption>Novo uniforme São Paulo 2022! Compre já o seu!</figcaption>

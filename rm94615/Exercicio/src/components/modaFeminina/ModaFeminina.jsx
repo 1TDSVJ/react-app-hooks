@@ -14,7 +14,7 @@ export default function ModaFeminina() {
         <>
         <div style={modaFeminina}>
             <h1>Moda Feminina</h1>
-            <p>Aqui você mulher encontra a roupa ideal para o seu estilo! Vem ser mais você!</p>
+            <p>Temos conjuntos maravilhosos de moda Feminina! Uma peça mais linda que a outra.</p>
             <figure>
                 <img src={roupaF} alt="Roupa Casual Cinza e Preto Loud (Thaiga)"/>
                 <figcaption>Conjunto Casual feminina! Compre já o seu!</figcaption>
