@@ -1,18 +1,18 @@
 import React from "react"
 
-export default function Home(){
+export default function Sobre(){
 
-    const home = {
-        backgroundColor: '#ffb',
-        height: '85vh',
+    const sobre = {
+        backgroundColor: '#f5f5f5',
+        height: '70vh',
         textAlign: 'center',
-        color: 'orange'
+        color: '#000',
     }
 
     return(
-        <div style={home}>
-            <h1>Página Principal</h1>
-            <p>Exemplo da página principal do projeto</p>
+        <div style={sobre}>
+            <h1>Sobre:</h1>
+            <p>Página criada por Diogo Giarranti Kahn RM:92928</p>
         </div>
     )
 }

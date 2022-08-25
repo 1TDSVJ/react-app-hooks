@@ -1,18 +1,28 @@
 import React from "react"
+import img from '../../img/modafeminina.jpg'
 
 export default function ModaFeminina(){
 
-    const home = {
-        backgroundColor: '#ffb',
-        height: '85vh',
+    const modafem = {
+        backgroundColor: 'lightpink',
+        height: '70vh',
         textAlign: 'center',
-        color: 'orange'
+        color: 'gray'
     }
 
     return(
-        <div style={home}>
-            <h1>Página Principal</h1>
-            <p>Exemplo da página principal do projeto</p>
+
+        <div>
+            <div style={modafem}>
+                <h1>Moda Feminia</h1>
+                <p>Os vestidos do momento!</p>
+            </div>
+
+            <figure>
+                <img src={img} alt="Vestidos" width={"150px"} />
+                <figcaption>Vestidos por apenas R$59,99</figcaption>
+            </figure>
         </div>
+
     )
 }

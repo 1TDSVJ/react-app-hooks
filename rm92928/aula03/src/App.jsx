@@ -3,11 +3,11 @@ import {Routes, Route } from 'react-router-dom';
 
 import Menu from "./desafio/menu/Menu";
 import Home from "./desafio/home/Home";
-import Menu from "./desafio/rodape/Rodape";
-import Produtos from "./desafio/modafeminino/ModaFeminina";
-import Servicos from "./desafio/modamasculina/ModaMasculina";
-import Servicos from "./desafio/modainfantil/ModaInfantil";
-import Servicos from "./desafio/sobre/Sobre";
+import Rodape from "./desafio/rodape/Rodape";
+import ModaFeminina from "./desafio/modafeminina/ModaFeminina";
+import ModaMasculina from "./desafio/modamasculina/ModaMasculina";
+import ModaInfantil from "./desafio/modainfantil/ModaInfantil";
+import Sobre from "./desafio/sobre/Sobre";
 
 export default function App(){
     return(
@@ -15,10 +15,10 @@ export default function App(){
         <Menu />
         <Routes>
             <Route path="/" element={<Home />}/>
-            <Route path="/produtos" element={<ModaFeminina />}/>
-            <Route path="/servicos" element={<ModaMasculina />}/>
-            <Route path="/servicos" element={<ModaInfantil />}/>
-            <Route path="/servicos" element={<Sobre />}/>
+            <Route path="/modafeminina" element={<ModaFeminina />}/>
+            <Route path="/modamasculina" element={<ModaMasculina />}/>
+            <Route path="/modainfantil" element={<ModaInfantil />}/>
+            <Route path="/sobre" element={<Sobre />}/>
         </Routes>
         <Rodape />
     </>

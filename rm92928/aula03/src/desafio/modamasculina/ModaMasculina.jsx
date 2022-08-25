@@ -1,18 +1,29 @@
 import React from "react"
 
-export default function Home(){
+import img from '../../img/modamasculina.jpg'
 
-    const home = {
-        backgroundColor: '#ffb',
-        height: '85vh',
+export default function ModaMasculina(){
+
+    const modamas = {
+        backgroundColor: 'lightblue',
+        height: '70vh',
         textAlign: 'center',
-        color: 'orange'
+        color: 'gray'
     }
 
     return(
-        <div style={home}>
-            <h1>Página Principal</h1>
-            <p>Exemplo da página principal do projeto</p>
+
+        <div>
+            <div style={modamas}>
+                <h1>Moda Masculina</h1>
+                <p>O hype dos homens chegou!</p>
+            </div>
+
+            <figure>
+                <img src={img} alt="Jaqueta do rock" width={"150px"} />
+                <figcaption>Jaqueta Route 66 por apenas R$39,99</figcaption>
+            </figure>
         </div>
+    
     )
 }
