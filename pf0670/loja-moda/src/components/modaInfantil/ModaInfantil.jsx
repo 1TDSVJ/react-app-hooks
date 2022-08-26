@@ -42,7 +42,7 @@ function ModaInfantil() {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit facere
           eos suscipit. Quas, eius accusamus. Commodi laudantium tempora, ipsum
           sint quasi, quas exercitationem ab ad, necessitatibus reiciendis
-          repellat repudiandae quo? Mollitia, deserunt dolorum accusamus vel
+          repellat repudiandaea quo? Mollitia, deserunt dolorum accusamus vel
           quisquam reprehenderit provident culpa eos quibusdam. Necessitatibus
           cum veritatis iusto dolore, minima obcaecati mollitia atque laborum
           quisquam provident, deleniti eveniet adipisci fugiat accusamus

@@ -32,7 +32,7 @@ function ModaMasculina() {
           doloremque odio, nisi dignissimos consequatur mollitia accusantium
           officiis sunt minima tempora voluptatum, voluptas ex similique
           architecto quo molestias cupiditate. Explicabo dolores quae itaque
-          nobis in ipsum accusamus, assumenda ipsa.
+          nobis in ipsum accusamus, assumenda ipsaa.
         </p>
       </figcaption>
 

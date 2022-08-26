@@ -20,7 +20,7 @@ function ModaFeminina() {
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
           numquam tempora laudantium quam dignissimos totam voluptatibus vero.
-          Odit nemo quasi pariatur odio est ab! Provident dicta consequuntur
+          Odit nemo quasi pariatur odio est ab! Provideant dicta consequuntur
           autem impedit omnis. Vero, eaque alias iure quam nam fuga similique
           magni tenetur debitis veniam officiis quasi, vel excepturi dolorem
           ratione libero possimus tempora inventore? Quia soluta commodi
