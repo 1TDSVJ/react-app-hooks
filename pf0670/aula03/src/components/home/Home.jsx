@@ -1,23 +1,20 @@
-import React from "react";
+import React from 'react';
 
-export default function Home(){
-        const home = {
-
-            backgroundColor: '#ffb',
-            height: '85vh',
-            textAlign: 'center',
-            color:'orange'
-        }
-
-        return(
-            <div style={home}>
-                <h1>Página principal</h1>
-                <p>Exemplo de pagina principal</p>
-            </div> 
-        
-        
-        
-        
-        
-        )
+// import { Container } from './styles';
+const home = {
+    backgroundColor: '#e0cb60',
+    color: '8baced',
+       
 }
+function Home() {
+  return (
+    <div style={home}>
+        <h1>Seja bem vindo ao site de Modas mais famoso do Brasil!</h1>
+        <p>Exemplo de pagina principal</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio dolore labore ullam quis nesciunt explicabo amet libero non dicta, similique cum inventore accusamus alias quos voluptatum beatae veniam commodi, nemo qui tempore! Sunt vitae, iure molestiae maxime ipsum excepturi libero voluptatum quo, doloribus voluptate quos necessitatibus vero repudiandae illum. Provident perspiciatis accusantium dicta consectetur nihil odit modi asperiores pariatur non, eaque autem corrupti perferendis necessitatibus ipsum reiciendis? Atque a aliquam quisquam repellat facilis sed amet eaque. Ea, officiis delectus facilis repudiandae sapiente non, ipsam beatae earum natus dolorum libero necessitatibus voluptate et vitae eius voluptatum repellat, autem est nisi modi consectetur praesentium blanditiis. Minus iusto commodi aperiam nostrum magnam dolorum quidem officiis? Reiciendis obcaecati quisquam vitae dolore consequatur magnam deserunt officiis adipisci fugit voluptatum ut quis aliquid ullam voluptate sint labore incidunt amet eius temporibus illum minima itaque suscipit, alias molestias! Voluptatem tenetur necessitatibus nobis laudantium vero, ipsam laboriosam amet quo tempora soluta accusamus blanditiis accusantium officiis explicabo facere sequi quod nostrum vitae et cupiditate beatae, eos consequuntur. Veniam fugit illum atque rerum nam id, totam delectus aut dignissimos asperiores nisi culpa possimus, laboriosam quo non cupiditate vel repellendus alias dolorum omnis, libero eum blanditiis? Magnam possimus hic, rerum dolore corporis recusandae quas eum delectus inventore, ad quia alias dignissimos, culpa facere nam deleniti sunt! Quis error quia pariatur assumenda suscipit adipisci aut accusantium facilis blanditiis molestiae? Sunt fugit illo obcaecati quis ullam iste molestias aperiam tenetur odio delectus tempora eos, libero fugiat nobis at aliquam laboriosam doloribus saepe quas blanditiis modi neque aliquid ut. Nesciunt aperiam alias, ratione praesentium natus in impedit sit velit perferendis ad eius quasi, ex placeat sapiente eos rerum nisi neque. Suscipit placeat unde provident assumenda voluptatibus consequatur nihil explicabo ab itaque perspiciatis dolore ut facilis dolorem, natus molestiae fugiat minus incidunt. Enim harum quod fugit maxime cupiditate quaerat voluptates officiis, veritatis mollitia rem rerum numquam ipsa ut praesentium vel quia consectetur aspernatur aut velit? Itaque soluta voluptatum ea aperiam corrupti modi nostrum mollitia quis adipisci, nisi similique doloribus facilis, ut magni error iusto qui maxime? Perferendis iure voluptatum dolorem veritatis libero maiores eaque, ex magnam, est quod fugiat laboriosam voluptas a esse possimus eius placeat odio omnis reiciendis rem necessitatibus nobis pariatur vero? Necessitatibus id, magni aperiam impedit maxime delectus dolore quidem dicta voluptatibus sapiente fugiat veritatis, harum est placeat aliquid laudantium nobis amet voluptatum a distinctio, sequi commodi in ducimus perferendis? Dicta corrupti totam, aperiam delectus voluptate officia velit doloribus eligendi et earum consectetur sequi distinctio nisi consequatur, reprehenderit facilis cupiditate vero, sint error tempora quae? Cupiditate, illum officiis quidem laudantium architecto debitis deserunt repellat, exercitationem beatae eligendi earum odit. Voluptatibus vero nam obcaecati deleniti molestiae unde delectus explicabo rem veritatis nesciunt libero facere aliquam saepe, veniam assumenda mollitia ab, enim porro, eaque amet. Quam possimus blanditiis exercitationem. Fugiat totam sint voluptatem, eos exercitationem fugit harum nostrum, quod suscipit sit magni aliquam. Delectus blanditiis eligendi, sapiente possimus officiis nemo beatae repellat officia minus dolores, impedit rerum, fugiat voluptatibus magnam accusantium et enim!</p>
+        <img src="" alt="" />
+    </div>
+  )
+}
+
+export default Home;
