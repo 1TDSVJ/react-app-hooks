@@ -3,7 +3,7 @@ import React from 'react';
 // import { Container } from './styles';
 const modaFeminina = {
   backgroundColor: '#f5f',
-  height: '20vh',
+  height: '40vh',
   textAlign: 'center',
   color:'black'
   }

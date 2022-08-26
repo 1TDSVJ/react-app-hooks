@@ -18,7 +18,7 @@ export default function Menu() {
             <li> <Link to="/ModaInfantil">Moda Infantil</Link>  </li>
             <li> <Link to="/Sobre">Sobre</Link>  </li>
               
-               </ul>
+            </ul>
       
       </header>
 

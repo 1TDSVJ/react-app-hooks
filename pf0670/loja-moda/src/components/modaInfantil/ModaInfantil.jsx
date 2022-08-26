@@ -3,7 +3,7 @@ import React from 'react';
 // import { Container } from './styles';
 const modaInfantil = {
   backgroundColor: '#fc0',
-  height: '20vh',
+  height: '40vh',
   textAlign: 'center',
   color:'black'
   }
