@@ -1,19 +1,23 @@
 import React from 'react';
+import autor from './.././img/autor.jpg'
 
-const sobre = {
-  backgroundColor: 'gray',
-  height: '20vh',
-  textAlign: 'center',
-  color:'black'
+export default function Sobre() {
+  const sobre = {
+    backgroundColor: '#BA55D3',
+    height: '105vh',
+    textAlign: 'center',
+    color: 'white',
+    fontSize: '20px',
   }
 
-function Sobre() {
   return (
     <div style={sobre}>
-        <h1>Integrantes</h1>
-        <p>Marco Martinez - RM95614</p>
+      <h1>Autor</h1>
+      <img src={autor} alt="autor" />
+      <figcaption>
+        <p>Emerson Galdino - RM93899 <a href="https://www.instagram.com/yosoygaldino/" target='blank'>Instagram</a>
+        </p>
+      </figcaption>
     </div>
   )
 }
-
-export default Sobre;

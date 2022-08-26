@@ -1,13 +1,16 @@
-import React from 'react';
-// import { Container } from './styles';
-const rodape = {
-  backgroundColor: '#f5f5',
-  
-  }
+import React from 'react'
+
+
 export default function Rodape() {
+  const rodape = {
+    backgroundColor: '#DCDCDC',
+  }
+
   return (
-    <div style={rodape}>
-        <p>Desenvolvido por ArtLabs - Todos os direitos reservados - 2022</p>
-    </div>
+    <footer>
+      <div style={rodape}>
+        <p>&copy;Desenvolvido por <b>Stylist Premium</b> - Todos os direitos reservados - 2022</p>
+      </div>
+    </footer>
   )
 }

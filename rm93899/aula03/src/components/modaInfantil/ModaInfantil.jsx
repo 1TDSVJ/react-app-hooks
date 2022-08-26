@@ -1,19 +1,18 @@
-import React from 'react';
+import React from 'react'
+import infantil from './../img/infantil.jpeg'
 
-const modaInfantil = {
-  backgroundColor: '#fc0',
-  height: '20vh',
-  textAlign: 'center',
-  color:'black'
+export default function ModaInfantil() {
+  const modaInfantil = {
+    backgroundColor: '#FFFF00',
+    height: '105vh',
+    textAlign: 'center',
+    color: 'black'
   }
-function ModaInfantil() {
-  return (
-    <div style={modaInfantil}>
+    return (
+      <div style={modaInfantil}>
         <h1>Moda Infantil</h1>
-        <img src="" alt="" />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis quo ipsam temporibus, sapiente alias, natus, doloremque facere ullam aliquam deserunt distinctio dicta? Sequi nostrum a nihil ut quasi cum.</p>
-    </div>
-  )
+        <img src={infantil} alt="" />
+        <p>Roupas para pais e filhos! Modelos incríveis feitos para os mais diferentes estilos! Surpreenda a todos com a Stylist Premium!</p>
+      </div>
+    )
 }
-
-export default ModaInfantil;
