@@ -3,7 +3,7 @@ import React from 'react';
 // import { Container } from './styles';
 const sobre = {
   backgroundColor: 'gray',
-  height: '20vh',
+  height: '15vh',
   textAlign: 'center',
   color:'black'
   }
