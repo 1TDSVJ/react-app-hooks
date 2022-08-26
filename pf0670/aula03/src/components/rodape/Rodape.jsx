@@ -5,10 +5,15 @@ const rodape = {
   
   }
 export default function Rodape() {
-  return (
-    <div style={rodape}>
-        <p>Desenvolvido por ArtLabs - Todos os direitos reservados - 2022</p>
-    </div>
+    return (
+
+      <footer>
+        <div style={rodape}>
+          <p>Desenvolvido por ArtLabs - Todos os direitos reservados - 2022</p>
+         </div>
+      </footer>
+    
   )
 }
+
 
