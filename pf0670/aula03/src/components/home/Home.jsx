@@ -6,7 +6,7 @@ export default function Home(){
         backgroundColor: '#f5f5',
         height: '20vh',
         textAlign: 'center',
-        color:'white'
+        color:'black'
     }
     return(
         <div style={home}>

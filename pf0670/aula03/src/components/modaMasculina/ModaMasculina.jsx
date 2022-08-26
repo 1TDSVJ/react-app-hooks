@@ -3,8 +3,10 @@ import React from 'react';
 // import { Container } from './styles';
 
 const modaMasculina = {
-backgroundColor: '#f5f5',
-
+backgroundColor: '#fb7',
+height: '20vh',
+textAlign: 'center',
+color:'black'
 }
 function ModaMasculina() {
   return (
