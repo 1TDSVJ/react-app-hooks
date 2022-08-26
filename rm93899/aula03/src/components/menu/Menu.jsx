@@ -1,18 +1,18 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React from "react";
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
-function menu() {
-  return (
-    <header>
-        <nav>
+
+export default function Menu() {
+
+    return(
+      <header>
         <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/produtos">Produtos</Link></li>
-            <li><Link to="/servicos">Servicos</Link></li>
+          <li> <Link to="/">Home</Link>  </li>
+          <li> <Link to="/ModaMasculina">Moda Masculina</Link></li>
+          <li> <Link to="/ModaFeminina">Moda Feminina</Link></li>
+          <li> <Link to="/ModaInfantil">Moda Infantil</Link></li>
+          <li> <Link to="/Sobre">Sobre</Link></li>
         </ul>
-        </nav>
-    </header>
-  )
+      </header>
+)
 }
-
-export default menu;
