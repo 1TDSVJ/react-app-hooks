@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Menu from "./components/menu/Menu";
-import Produtos from "./components/produtos/Produtos";
-import Servicos from "./components/servicos/Servicos";
+// import Menu from "./components/menu/Menu";
+// import Produtos from "./components/produtos/Produtos";
+// import Servicos from "./components/servicos/Servicos";
 
 import MenuModa from "./components/moda/MenuModa";
 import RodapeModa from "./components/moda/RodapeModa";
@@ -15,11 +15,8 @@ import Sobre from "./pages/moda/sobre/Sobre";
 export default function App() {
   return (
     <>
-      {" "}
-      // Fragment - Para não criar uma tag que possa alterar o layout
       {/* <Menu /> */}
       
-      // Exercício
       <MenuModa />
 
       <Routes>
@@ -27,7 +24,6 @@ export default function App() {
         <Route path="/produtos" element={<Produtos />} />
         <Route path="/servicos" element={<Servicos />} /> */}
         
-        // Exercício
         <Route path="/homeModa" element={<HomeModa />} />
         <Route path="/modafeminina" element={<ModaFeminina />} />
         <Route path="/modamasculina" element={<ModaMasculina />} />
